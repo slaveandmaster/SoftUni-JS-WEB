@@ -1,0 +1,21 @@
+      <h1>EDIT</h1>
+      <div class="form">
+        <form action='/edit/{{product.id}}' method="post">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" value="{{product.name}}">
+          <label for="name">Price: </label>
+           <input type="Number" id="price" name="price" value="{{product.price}}">
+          <label for="image">ImageUrl</label>
+          <input type="text" id="image" name="imageUrl" value="{{product.imageUrl}}">
+          {{!-- <label for="difficulty">Difficulty</label> --}}
+          {{!-- <select id="difficulty" name="difficultyLevel">
+            <option value="1">1 - Very Easy</option>
+            <option value="2">2 - Easy</option>
+            <option value="3">3 - Medium (Standard 3x3)</option>
+            <option value="4">4 - Intermediate</option>
+            <option value="5">5 - Expert</option>
+            <option value="6">6 - Hardcore</option>
+          </select> --}}
+          <input type="submit" value="Update">
+        </form>
+      </div>

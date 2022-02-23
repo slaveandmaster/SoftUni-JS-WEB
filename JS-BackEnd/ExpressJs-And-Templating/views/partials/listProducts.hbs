@@ -1,0 +1,7 @@
+<ul>
+{{#each products }}
+    <li>{{name}} - {{price}}  <a href="/catalog/delete/{{id}}">Delete</a></li>
+{{else}}
+ <p>No records in database!</p>
+ {{/each}}
+</ul>
